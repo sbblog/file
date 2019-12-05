@@ -47,7 +47,7 @@ server {
 }
 EOF
 # 安装 php7 和 sqlite数据库
-apk add php7 php7-mysqli php7-pdo_mysql php7-mbstring php7-json php7-zlib php7-gd php7-intl php7-session php7-fpm php7-memcached php7-tokenizer php7-ctype php7-sqlite php7-pdo_sqlite
+apk add php7 php7-mysqli php7-pdo_mysql php7-mbstring php7-json php7-zlib php7-gd php7-intl php7-session php7-fpm php7-memcached php7-tokenizer php7-ctype php7-sqlite3 php7-pdo_sqlite
 
 # 重启nginx 并添加开机启动
 /etc/init.d/nginx restart
