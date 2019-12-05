@@ -15,5 +15,6 @@ apk add -u tzdata
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 apk add ca-certificates
 update-ca-certificates
+apk --no-cache add openssl wget
 sync
 reboot -f
