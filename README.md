@@ -1,2 +1,2 @@
-# file
-www.sbblog.cn
+# 脚本分发
+来自www.sbblog.cn
