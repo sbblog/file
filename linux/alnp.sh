@@ -2,7 +2,7 @@
 #   --------------------------------------------------------------
 #	系统支持: Alpine 3.10
 #	作    者: feixiang
-#   博    客: https://www.sbblog.cn/
+#	博    客: https://www.sbblog.cn/
 #	基于Alpine一键安装 Nginx+PHP7+Sqlite3 环境 （支持VPS最小内存32M）
 #	开源地址：https://github.com/sbblog/file/linux
 #   --------------------------------------------------------------
