@@ -1,13 +1,13 @@
 #!/bin/sh -e
 #   --------------------------------------------------------------
-#	系统支持: Alpine 3.10
+#	系统支持: Alpine 3.10+
 #	作    者: sbblog
 #	博    客: https://www.sbblog.cn/
 #	开源地址：https://github.com/sbblog/file/linux
 #	基于Alpine一键安装 Nginx+PHP7+Sqlite3 环境 （支持VPS最小内存32M）
 #   --------------------------------------------------------------
 
-echo -e "系统支持: Alpine 3.10"
+echo -e "系统支持: Alpine 3.10+"
 echo -e "作    者: sbblog"
 echo -e "博    客: https://www.sbblog.cn/"
 echo -e "基于Alpine一键安装 Nginx+PHP7+Sqlite3 环境 （支持VPS最小内存32M）"
