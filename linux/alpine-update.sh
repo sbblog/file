@@ -6,8 +6,8 @@ apk upgrade
 sync
 rm  /etc/apk/repositories
 cat > /etc/apk/repositories << EOF
-http://dl-cdn.alpinelinux.org/alpine/v3.11/main
-http://dl-cdn.alpinelinux.org/alpine/v3.11/community
+http://dl-cdn.alpinelinux.org/alpine/latest-stable/main
+http://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 EOF
 apk update
 apk upgrade
