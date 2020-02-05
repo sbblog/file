@@ -42,6 +42,8 @@ cat > /home/wwwroot/default/index.php << EOF
 <?php phpinfo(); ?>
 EOF
 
+netstat -ntlp
+
 echo -e ""
 echo -e ""
 echo -e ""
