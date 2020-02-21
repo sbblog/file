@@ -26,6 +26,20 @@ wget -P /etc/nginx/conf.d https://raw.githubusercontent.com/sbblog/file/master/l
 # 安装 php7 和 sqlite数据库
 apk add php7 php7-mysqli php7-pdo_mysql php7-mbstring php7-json php7-zlib php7-gd php7-intl php7-session php7-fpm php7-memcached php7-tokenizer php7-ctype php7-sqlite3 php7-pdo_sqlite
 
+sed -i "s@^memory_limit.*@memory_limit = 5M@" /etc/php7/php.ini
+sed -i 's@^output_buffering =@output_buffering = On\noutput_buffering =@' /etc/php7/php.ini
+sed -i 's@^;cgi.fix_pathinfo.*@cgi.fix_pathinfo=1@' /etc/php7/php.ini
+sed -i 's@^short_open_tag = Off@short_open_tag = On@' /etc/php7/php.ini
+sed -i 's@^expose_php = On@expose_php = Off@' /etc/php7/php.ini
+sed -i 's@^request_order.*@request_order = "CGP"@' /etc/php7/php.ini
+sed -i 's@^;date.timezone.*@date.timezone = Asia/Shanghai@' /etc/php7/php.ini
+sed -i 's@^post_max_size.*@post_max_size = 100M@' /etc/php7/php.ini
+sed -i 's@^upload_max_filesize.*@upload_max_filesize = 50M@' /etc/php7/php.ini
+sed -i 's@^max_execution_time.*@max_execution_time = 600@' /etc/php7/php.ini
+sed -i 's@^;realpath_cache_size.*@realpath_cache_size = 2M@' /etc/php7/php.ini
+sed -i 's@^disable_functions.*@disable_functions = passthru,exec,system,chroot,chgrp,chown,shell_exec,proc_open,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,popen@' /etc/php7/php.ini
+
+
 # 创建目录
 mkdir /home/wwwroot
 mkdir /home/wwwroot/default
