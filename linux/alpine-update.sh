@@ -21,8 +21,10 @@ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 apk add openssh
 echo PermitRootLogin yes >> /etc/ssh/sshd_config
 
-echo -e "系统更新完成"
+echo -e "系统更新完成，当前alpine版本："
 cat /etc/alpine-release
+sleep 3
+echo -e ""
 echo -e "10秒后重启系统"
 sleep 10
 
