@@ -20,6 +20,7 @@ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 apk add openssh
 echo PermitRootLogin yes >> /etc/ssh/sshd_config
+rc-update add sshd default
 
 echo -e "系统更新完成，当前alpine版本："
 cat /etc/alpine-release
