@@ -2,13 +2,6 @@
 
 apk update
 
-apk add openssh
-echo PermitRootLogin yes >> /etc/ssh/sshd_config
-
-apk add e2fsprogs-extra
-sed -i "s/^tty/#tty/g" /etc/inittab
-chattr +i /etc/inittab
-
 apk add caddy
 cat > /etc/caddy/caddy.conf << EOF
 :80 {
