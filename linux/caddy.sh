@@ -1,16 +1,9 @@
 #!/bin/bash
 #
-# Author: lovekk <admin AT lovekk.org>
-# Blog: https://www.lovekk.org/
-# Demo: https://16mb.tw/
-#
 
 clear
 printf "
 #######################################################################
-#                  16MB Typecho for Alpine Linux v1.0                 #
-#       For more information please visit https://www.lovekk.org      #
-#                  Demo please visit https://16mb.tw                  #
 #######################################################################
 "
 # os update
