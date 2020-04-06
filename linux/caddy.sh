@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-#
 # Caddy Web Server Installer
-#
+# https://github.com/sayem314/Caddy-Web-Server-Installer
 #
 echo "  Setting timezone..."
 rm -rf /etc/localtime
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 
 if [[ -e "/usr/local/bin/caddy" ]]; then
 	echo ""
