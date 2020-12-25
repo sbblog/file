@@ -34,7 +34,7 @@ wget -P /etc/php7 https://raw.githubusercontent.com/sbblog/file/master/linux/con
 cat > /etc/caddy/caddy.conf << EOF
 :80 {
     gzip
-    root /home/wwwroot/default
+    root /home/www/default
     fastcgi / /home/run/php-fpm.sock php
 }
 EOF
