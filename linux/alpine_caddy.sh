@@ -14,7 +14,7 @@ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 apk add caddy
 
-apk add php7 php7-ctype php7-curl php7-dom php7-fpm php7-iconv php7-gd php7-json php7-mysqli php7-openssl php7-pdo php7-pdo_sqlite php7-sqlite3 php7-xml php7-xmlreader php7-zlib php7-phar php7-posix php7-ftp php7-session php7-bcmath php7-mcrypt php7-sockets php7-mbstring php7-wddx php7-fileinfo 
+apk add php7 php7-ctype php7-curl php7-dom php7-fpm php7-iconv php7-gd php7-json php7-mysqli php7-openssl php7-pdo php7-pdo_sqlite php7-sqlite3 php7-xml php7-xmlreader  php7-phar php7-posix php7-ftp php7-session php7-bcmath php7-mcrypt php7-sockets php7-mbstring php7-fileinfo 
 
 sed -i 's@^;date.timezone.*@date.timezone = Asia/Shanghai@' /etc/php7/php.ini
 sed -i "s@^memory_limit.*@memory_limit = 16M@" /etc/php7/php.ini
