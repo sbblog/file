@@ -38,6 +38,7 @@ cat > /etc/caddy/Caddyfile << EOF
     gzip
     root /home/www/default
     php_fastcgi unix//home/run/php-fpm.sock
+    file_server
 }
 EOF
 
