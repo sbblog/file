@@ -28,14 +28,16 @@ cat > /home/www/default/index.php << EOF
 <?php phpinfo(); ?>
 EOF
 
-rm /etc/php7/php-fpm.conf
+mv /etc/php7/php-fpm.conf /etc/php7/php-fpm.conf.bak
 wget -P /etc/php7 https://raw.githubusercontent.com/sbblog/file/master/linux/conf/php-fpm.conf
 
-cat > /etc/caddy/caddy.conf << EOF
+
+mv /etc/caddy/Caddyfile /etc/caddy/Caddyfile.bak
+cat > /etc/caddy/Caddyfile << EOF
 :80 {
     gzip
     root /home/www/default
-    fastcgi / /home/run/php-fpm.sock php
+    php_fastcgi unix//home/run/php-fpm.sock
 }
 EOF
 
