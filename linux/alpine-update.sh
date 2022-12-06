@@ -1,8 +1,8 @@
 #!/bin/sh -e
 # The source of the update is official, and some areas may be slow.
 
-apk update
-apk upgrade
+apk update --allow-untrusted
+apk upgrade --allow-untrusted
 
 sync
 
@@ -12,13 +12,13 @@ http://dl-cdn.alpinelinux.org/alpine/latest-stable/main
 http://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 EOF
 
-apk update
-apk upgrade
+apk update --allow-untrusted
+apk upgrade --allow-untrusted
 
-apk add -u tzdata
+apk add -u tzdata --allow-untrusted
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-apk add openssh
+apk add openssh --allow-untrusted
 echo PermitRootLogin yes >> /etc/ssh/sshd_config
 rc-update add sshd default
 
