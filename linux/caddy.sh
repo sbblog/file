@@ -7,6 +7,7 @@ echo "  Setting timezone..."
 rm -rf /etc/localtime
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
+apt-get install lsb-release -y
 
 if [[ -e "/usr/local/bin/caddy" ]]; then
 	echo ""
